@@ -5,60 +5,50 @@
   <title>Simple Ticket</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-  
+<body>  
 <div id="boxticket">
-      <p id="titleBillete">Viagens Javascript</p>
-  
-      <div class="pedidoBox">
-         <input class="test" type="text" id="origem" placeholder="Origem"  value="">
-    </div>
-    
-    <div class="pedidoBox">
-       <input class="test" type="text" id="destino" placeholder="Destino" value="">
-    </div>
-          
-    <div class="pedidoBox">
-        <span>Hora</span>
-        <select name="hora" id="hora">
-          <option value="1">08:00</option>
-          <option value="2">10:00</option>
-          <option value="3">12:00</option>
-          <option value="4">14:00</option>
-          <option value="5">18:00</option>
-          <option value="6">20:00</option>
-        </select>
-      </div>
-                  
-    <div class="pedidoBox">
-        <span>Cantidad</span>
-        <select name="cuant" id="cuant">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-        </select>
-    </div>
-
-    <div class="pedidoBox">
-        <span>Sexo</span>
-        <select name="sexo" id="sexo">
-            <option value="1">Masculino</option>
-            <option value="2">Femenino</option>
-        </select>
-    </div>
-  
-    <div class="boxColor">
-      <span>Color</span>
-      <input value="#95eab7" type="color" name="color" class="color">
-    </div>
-  
-    <input type="submit" id="enviarTJ" value="ok">
-          
+  <p id="titleBillete">Javascript Travel</p>
+  <div class="pedidoBox">
+     <input class="test" type="text" id="origem" placeholder="Origem"  value="">
+  </div>
+  <div class="pedidoBox">
+     <input class="test" type="text" id="destino" placeholder="Destino" value="">
+  </div>      
+  <div class="pedidoBox">
+    <span>Hora</span>
+    <select name="hora" id="hora">
+      <option value="1">08:00</option>
+      <option value="2">10:00</option>
+      <option value="3">12:00</option>
+      <option value="4">14:00</option>
+      <option value="5">18:00</option>
+      <option value="6">20:00</option>
+    </select>
+  </div>            
+  <div class="pedidoBox">
+    <span>Cantidad</span>
+    <select name="cuant" id="cuant">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+  </div>
+  <div class="pedidoBox">
+      <span>Sexo</span>
+      <select name="sexo" id="sexo">
+          <option value="1">Masculino</option>
+          <option value="2">Femenino</option>
+      </select>
+  </div>
+  <div class="boxColor">
+    <span>Color</span>
+    <input value="#95eab7" type="color" name="color" class="color">
+  </div>
+  <input type="submit" id="enviarTJ" value="ok">        
 </div>
-
 <div id="containerVL"></div>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
