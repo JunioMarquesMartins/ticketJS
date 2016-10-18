@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster|Montserrat:400,700);
+body, html {
+  font-family: arial;
+  margin: 0; }
+
+canvas {
+  background: #fff;
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1; }
+
+#boxticket, #containerVL {
+  max-width: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px #747171;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#containerVL {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  width: 100%;
+  left: 340px; }
+
+.animMove {
+  animation: mover .01s ease 50; }
+
+.destacar {
+  border: 1px solid red; }
+
+.msn {
+  font-size: 18px; }
+
+@keyframes mover {
+  0% {
+    transform: rotate(1deg); }
+  100% {
+    transform: rotate(-1deg); } }
+.memo {
+  background: yellow;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  transform: rotate(60deg); }
+
+.pedidoBox {
+  display: inline-block;
+  width: 48%;
+  margin: 0 0 20px 0; }
+  .pedidoBox span {
+    display: block; }
+
+input[type="text"] {
+  width: 98%; }
+
+.fecha {
+  border-bottom: 1px solid #ccc;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+select {
+  width: 60%; }
+
+.cerrarBL {
+  text-decoration: none;
+  color: #555555;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  background: #ccc;
+  width: 15px;
+  border-radius: 50%;
+  height: 15px;
+  text-align: center; }
+
+.info {
+  font-size: 11px;
+  border-bottom: 1px solid;
+  width: 90%;
+  padding: 0 0 5px;
+  margin-bottom: 40px; }
+
+.tarjeta {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 15px 0; }
+
+#enviarTJ {
+  width: 116px;
+  background: #72E0D6;
+  font-size: 12px;
+  border: 0;
+  color: #595959;
+  padding: 6px;
+  text-transform: uppercase;
+  color: #fff;
+  display: block; }
+  #enviarTJ:hover {
+    background: #48d7ca; }
+
+.box {
+  border: 1px dashed #646464;
+  padding: 10px;
+  margin: 15px 0;
+  position: relative; }
+
+#titleBillete {
+  font: 500 35px Lobster;
+  margin: 10px 0 20px;
+  color: #2a3b3c; }
+
+.hora {
+  float: left; }
+
+.cant {
+  float: right; }
+
+.colorTest {
+  background: red; }
+
+.boxColor {
+  display: inline-block; }
+  .boxColor .color {
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 0;
+    background: #fff; }
+
+.mysite {
+  display: block;
+  text-align: right;
+  text-align: center;
+  display: block; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/*# sourceMappingURL=main.css.map */
