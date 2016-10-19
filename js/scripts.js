@@ -11,12 +11,27 @@ var leerDatos = function() {
         meses, dias, xData, fecha;
 
     meses = [
-      "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-      "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+      "Enero",
+      "Febrero",
+      "Marzo",
+      "Abril",
+      "Mayo",
+      "Junio",
+      "Julio",
+      "Agosto",
+      "Septiembre",
+      "Octubre",
+      "Noviembre",
+      "Diciembre"
     ];
     dias = [
-      "Domingo", "Lunes", "Martes", "Miércoles",
-      "Jueves", "Viernes", "Sábado"
+      "Domingo",
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes",
+      "Sábado"
     ];
     xData = new Date();
     fecha = (
@@ -32,7 +47,12 @@ var leerDatos = function() {
         for (var i = 0; i < campos.length; i++) {
           campos[i].className = "destacar";
         }
-        aviso.innerHTML = "<p class='msn'>Ops, <span class='memo'> :( </span> Los campos origem y destino son obligatorios.</p>";
+        aviso.innerHTML = "<p class='msn'>Ops,\
+                            <span class='memo'>\
+                              :(\
+                            </span>\
+                              Los campos origem y destino son obligatorios.\
+                          </p>";
     } else {
         aviso.innerHTML = "<p id='titleBillete'>Viagens Javascript</p>";
         boxticket.className = "";
@@ -47,7 +67,15 @@ var leerDatos = function() {
             sexo       = document.getElementById("sexo").options[document.getElementById("sexo").selectedIndex].text,
             boxId      = Math.floor(Math.random() * 1000);
 
-        imprimirBillete(fechaTotal, origemV, destinoV, hora, cantidad, sexo, colorV);
+        imprimirBillete(
+          fechaTotal,
+          origemV,
+          destinoV,
+          hora,
+          cantidad,
+          sexo,
+          colorV
+        );
     }
 };
 
