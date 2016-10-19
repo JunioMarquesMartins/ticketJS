@@ -48,10 +48,7 @@ var leerDatos = function() {
           campos[i].className = "destacar";
         }
         aviso.innerHTML = "<p class='msn'>Ops,\
-                            <span class='memo'>\
-                              :(\
-                            </span>\
-                              Los campos origem y destino son obligatorios.\
+                            <span class='memo'>:(</span>Los campos origem y destino son obligatorios.\
                           </p>";
     } else {
         aviso.innerHTML = "<p id='titleBillete'>Viagens Javascript</p>";
