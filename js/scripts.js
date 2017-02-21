@@ -48,7 +48,8 @@ var leerDatos = function() {
           campos[i].className = "destacar";
         }
         aviso.innerHTML = "<p class='msn'>Ops,\
-                            <span class='memo'>:(</span>Los campos origem y destino son obligatorios.\
+                            <span class='memo'>:(</span>\
+                            Los campos origem y destino son obligatorios.\
                           </p>";
     } else {
         aviso.innerHTML = "<p id='titleBillete'>Viagens Javascript</p>";
@@ -59,9 +60,12 @@ var leerDatos = function() {
         }
 
         var fechaTotal = origemV + " " + fecha,
-            hora       = document.getElementById("hora").options[document.getElementById("hora").selectedIndex].text,
-            cantidad   = document.getElementById("cuant").options[document.getElementById("cuant").selectedIndex].value,
-            sexo       = document.getElementById("sexo").options[document.getElementById("sexo").selectedIndex].text,
+            hora       = document.getElementById("hora")
+                        .options[document.getElementById("hora").selectedIndex].text,
+            cantidad   = document.getElementById("cuant")
+                        .options[document.getElementById("cuant").selectedIndex].value,
+            sexo       = document.getElementById("sexo")
+                        .options[document.getElementById("sexo").selectedIndex].text,
             boxId      = Math.floor(Math.random() * 1000);
 
         imprimirBillete(
@@ -87,7 +91,15 @@ var leerDatos = function() {
     }
 })();
 
-function imprimirBillete(fechaTotal, origemV, destinoV, hora, cantidad, sexo, colorV) {
+function imprimirBillete(
+                          fechaTotal,
+                          origemV,
+                          destinoV,
+                          hora,
+                          cantidad,
+                          sexo,
+                          colorV
+                        ) {
     var container = document.getElementById("containerVL");
     container.innerHTML += '<div class="box" style="background:' + colorV + '">\
                               <a class="cerrarBL" data-clic="close" href="JavaScript:void(0)">x</a>\
