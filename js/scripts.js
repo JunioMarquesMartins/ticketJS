@@ -1,5 +1,5 @@
 
-var campos = document.querySelectorAll("#boxticket .test");
+var campos = document.querySelectorAll("#boxticket .fieldTravel");
 
 var leerDatos = function() {
 
